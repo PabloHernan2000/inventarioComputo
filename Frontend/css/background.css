@@ -1,0 +1,42 @@
+.contenedor-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 13rem 3rem 13rem;
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+
+}
+
+.contenedor-img .img-reloj {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 1px 1px 3px 2px rgba(0, 140, 186, 0.5);
+}
+
+.contenedor-img img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(1.5px);
+    opacity: 0.8;
+}
+
+.contenedor-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+label {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+label, .contenedor-img h2{
+    color: black; text-shadow: white 0.1em 0.1em 0.2em
+}

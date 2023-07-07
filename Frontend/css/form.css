@@ -1,0 +1,85 @@
+.formulario_contenedor {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* background-color: #232323; */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario_fila {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.formulario_fila input,
+.formulario_fila select {
+    color: #000;
+    border-radius: 5px;
+    height: 30px;
+    width: 15rem;
+    text-align: center;
+}
+
+.formulario_fila textarea {
+    height: 70px;
+    width: 450px;
+    color: #000;
+    border-radius: 5px;
+}
+
+.formulario_campos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    margin-left: 1rem;
+}
+
+.formulario_campos input,
+.formulario_campos select,
+.formulario_campos textarea {
+    margin-top: 0.5rem;
+}
+
+.btn_registrar {
+    font-style: italic;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 40px;
+    width: 90px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #17A20E;
+    color: #fff;
+}
+
+.btn_registrar:active {
+    background-color: #0E6A08;
+    color: #fff;
+}
+
+.btn_actualizar {
+    font-style: italic;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 40px;
+    width: 90px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #146DDF;
+    color: #fff;
+}
+
+.btn_actualizar:active {
+    background-color: #1758AA;
+    color: #fff;
+}
+.ocultar{
+    display: none;
+}

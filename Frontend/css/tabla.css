@@ -1,0 +1,91 @@
+/********** 
+TABLA
+**********/
+
+.tabla_inventario {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    width: 80%;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 0 auto 0 auto;
+}
+
+th {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 8px;
+    background: #000;
+    border-top: 4px solid #000;
+    border-bottom: 1px solid #fff;
+    color: white;
+}
+
+td {
+    padding: 8px;
+    background: #e8edff;
+    border-bottom: 1px solid #fff;
+    color: #000;
+    border-top: 1px solid transparent;
+}
+
+tr:hover td {
+    background: #221f1f;
+    color: white;
+}
+
+.tabla_contenedor {
+    margin: 0 auto 0 auto;
+    width: 100%;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    background-color: #232323;
+    border-radius: 10px;
+}
+
+.tabla_contenedor select {
+    color: white;
+    background-color: #000;
+}
+
+.tabla_contenedor select option {
+    color: #000;
+}
+
+.tabla_contenedor input[type="search"] {
+    color: white;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.btn_seleccionar {
+    font-style: italic;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* height: 20px; */
+    height: 35px;
+    width: 95px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #7E7676;
+    color: #fff;
+}
+
+/* .btn_seleccionar a{
+    text-decoration: none;
+} */
+.btn_seleccionar:hover {
+    background-color: #fff;
+}
+
+.btn_seleccionar:hover {
+    color: #7E7676;
+}
+
+/* .btn_seleccionar:hover a{
+    color: #7E7676;
+} */
+.btn_seleccionar:active {
+    background-color: #000;
+    color: #fff;
+}

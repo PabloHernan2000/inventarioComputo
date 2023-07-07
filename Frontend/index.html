@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/background.css">
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <title>Inventario</title>
+
+</head>
+
+<body >
+    <!-- Navbar -->
+    <nav>
+        <header class="header header-login">
+            <div class="logo">
+                <img src="img/logo.ayuntamiento.png" alt="Logo Presidencia" />
+                <div class="text-logo">
+                    <h2>Secretaría de la Tesorería Municipal </h2>
+                </div>
+            </div>
+            <div class="titulo">
+                <h2>Sistema de Inventario</h2>
+            </div>
+        </header>
+    </nav>
+    <div class="contenedor-img">
+        <img class="img-reloj" src="./img/reloj.jpg" alt="Imagen de fondo">
+        <div class="contenedor-form">
+            <h2>LOGIN</h2>
+            <form>
+                <div class="form-fila">
+                    <div class="form-columna">
+                        <label id="user-label" for="user">USUARIO</label>
+                        <input id="user" name="user" type="text" placeholder="Ingresa tu usuario" required />
+                    </div>
+                </div>
+                <div class="form-fila">
+                    <div class="form-columna">
+                        <label id="password-label" for="password">CONTRASEÑA</label>
+                        <input id="password" name="password" type="password" placeholder="Ingresa tu contraseña"
+                            required />
+                        <div class="form-group">
+                            <button class="btn_ingresar" id="btn_ingresar">INGRESAR</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="line">
+                <hr>
+                <h3>© Secretaria Municipal de Pachuca 2023</h4>
+                    <h3>Coordinación de Informática</h4>
+                        <hr>
+            </div>
+        </div>
+    </footer>
+<script src="controllers/loginController.js"></script>
+<!-- Para las alertas -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

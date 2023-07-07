@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/tabla.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="css/datatables.min.css">
+    <script src="js/datatables.min.js"></script>
+    <title>Inventario</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <header class="header">
+            <div class="logo">
+                <img src="./img/logo.ayuntamiento.png" alt="Logo Presidencia" />
+                <div class="text-logo">
+                    <h2>Secretaría de la Tesorería Municipal</h2>
+                </div>
+            </div>
+            <div class="titulo">
+                <h2>Sistema de Inventario</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" id="idRegistro">Registro</a></li>
+                <li id="nombre_usuario"></li>
+                <li><a href="#" id="cerrar_sesion">Cerrar Sesión</a></li>
+            </ul>
+        </header>
+    </nav>
+    <div class="contenido">
+        <div class="tabla_contenedor" id="tabla_contenedor">
+            <table id="tabla_inventario" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Número de inventario</th>
+                        <th>Descripción</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Serie</th>
+                        <th>Departamento</th>
+                        <th>Responsable</th>
+                        <th>Fecha adquisición</th>
+                        <th>Precio de adquisición</th>
+                        <th>Estado</th>
+                        <th>Accion</th>
+                    </tr>
+                </thead>
+                <tbody id="datos_inventario">
+
+                </tbody>
+            </table>
+        </div>
+
+        <!-- FORM -->
+        <div class="formulario_contenedor ocultar" id="formulario">
+            <form id="form">
+                <div class="formulario_fila">
+                    <div class="formulario_campos">
+                        <label for="numero_inventario">NÚMERO DE INVENTARIO</label>
+                        <input id="numero_inventario" type="text">
+                    </div>
+                    <div class="formulario_campos">
+                        <label for="marca">MARCA</label>
+                        <input id="marca" type="text">
+                    </div>
+                    <div class="formulario_campos">
+                        <label for="modelo">MODELO</label>
+                        <input id="modelo" type="text">
+                    </div>
+                    <div class="formulario_campos">
+                        <label for="serie">SERIE</label>
+                        <input id="serie" type="text">
+                    </div>
+                </div>
+                <div class="formulario_fila">
+                    <div class="formulario_campos">
+                        <label for="departamento">DEPARTAMENTO</label>
+                        <input id="departamento" type="text">
+                    </div>
+                    <div class="formulario_campos">
+                        <label for="responsable">RESPONSABLE</label>
+                        <input id="responsable" type="text">
+                    </div>
+                    <div class="formulario_campos">
+                        <label for="fecha_adquisicion">FECHA ADQUISICION</label>
+                        <input id="fecha_adquisicion" type="date">
+                    </div>
+                    <div class="formulario_campos">
+                        <label for="precio_adquisicion">PRECIO ADQUISICION</label>
+                        <input id="precio_adquisicion" type="text">
+                    </div>
+                    <div class="formulario_campos">
+                        <label for="STATUS">STATUS</label>
+                        <select name="status" id="status">
+                            <option value="ALTA" selected>ALTA</option>
+                            <option value="BAJA">BAJA</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formulario_fila">
+                    <div class="formulario_campos">
+                        <label for="descripcion">DESCRIPCION</label>
+                        <textarea name="descripcion" id="descripcion"></textarea>
+                    </div>
+                </div>
+                <div class="formulario_fila">
+                    <div class="formulario_boton">
+                        <button class="btn_registrar" id="btn_registrar">Registrar</button>
+                        <button class="btn_actualizar ocultar" id="btn_actualizar">Actualizar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            <div class="line">
+                <hr>
+                <h3>© Secretaria Municipal de Pachuca 2023</h4>
+                    <h3>Coordinación de Informática</h4>
+                        <hr>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Para las alertas -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <script src="js/cdn.jsdelivr.js"></script>
+
+    <script src="controllers/busquedaController.js"></script>
+    <!-- <script src="controllers/registroController.js"></script> -->
+</body>
+
+</html>

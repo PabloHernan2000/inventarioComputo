@@ -1,0 +1,20 @@
+footer {
+    background-color: var(--contenedor-obscuro);
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+.footer {
+    color: white;
+    padding-bottom: 10px;
+
+}
+
+.line hr {
+    height: 2px;
+    width: 90%;
+    background-color: white;
+    display: inline-block;
+}
